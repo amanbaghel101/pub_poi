@@ -1,0 +1,302 @@
+/* Navbar */
+.navbar {
+    width: 100%;
+    z-index: 2000;
+}
+
+.fixed-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: top 0s ease-in-out;
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler-icon {
+    margin: 0;
+}
+
+
+/* marquee */
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    background-color: #1273C4;
+    margin-bottom: 35px;
+    height: 40px;
+    z-index: 1000;
+}
+
+.marquee p {
+    font-size: 1.5vw;
+    font-style: oblique;
+    color: #fff;
+    display: inline-block;
+    padding-left: 50%;
+    white-space: nowrap;
+    animation: marquee 8s linear infinite;
+    margin-top: 0px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(100%);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+@media (max-width:600px) {
+    .marquee {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        /* border: 1px solid #000; */
+        position: relative;
+        background-color: #1273C4;
+
+    }
+
+    .marquee p {
+        font-size: 3.5vw;
+        color: #fff;
+        display: inline-block;
+        padding: 0.5vw 0;
+        padding-left: 50%;
+        white-space: nowrap;
+        animation: marquee 10s linear infinite;
+        font-weight: 600;
+        font-style: oblique;
+    }
+}
+
+
+.row-data {
+    white-space: nowrap;
+    /* Prevents line breaks */
+    overflow: hidden;
+    /* Hides overflowed content */
+    text-overflow: ellipsis;
+    /* Adds ellipsis (...) to overflowed content */
+    font-size: 14px;
+    /* Adjust font size as needed */
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    /* background-color: #fefefe; */
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+#register-btn {
+    padding: 10px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #358F39;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.popup-content p {
+    font-size: 2vw;
+    color: #fff;
+    font-weight: bold;
+    padding: 2vw;
+}
+
+.permanent-register-btn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    /* Adjust color as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width:600px) {
+
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .popup-content {
+        /* background-color: #fefefe; */
+        margin: 20% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 100%;
+        max-width: 80%;
+        text-align: center;
+        position: relative;
+        margin-top: 40%;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    #register-btn {
+        padding: 10px 50px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .popup-content p {
+        font-size: 4vw;
+        color: #fff;
+        font-weight: bold;
+        padding: 2vw;
+    }
+
+    .permanent-register-btn {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        right: 20px;
+        bottom: 80px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #007BFF;
+        /* Adjust color as needed */
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+/* Default styles for larger screens */
+.img-container {
+    height: 60% !important;
+    /* Adjust as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Medium screens (Tablets) */
+@media (max-width: 768px) {
+    .img-container {
+        height: 50%;
+        /* Adjust as needed */
+    }
+}
+
+/* Small screens (Phones) */
+@media (max-width: 576px) {
+    .img-container {
+        height: 60%;
+        /* Adjust as needed */
+    }
+}
+
+
+
+/* Style the caret/arrow */
+.caret {
+    cursor: pointer;
+    user-select: none;
+    /* Prevent text selection */
+    border-color: transparent !important;
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+    transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+    display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home - POI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link href="./Content/img/favicon.ico" rel="icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link href="./Content/lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="./Content/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="./Content/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="./Content/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
+    <link href="./Content/css/bootstrap.min-Home.css" rel="stylesheet" />
+    <link href="./Content/css/jquery-ui.css" rel="stylesheet" />
+    <link href="./Content/css/css/style.css" rel="stylesheet" /> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.css" rel="stylesheet">
+
+    
+    <style>
+        .social-icon {
+            width: 24px;
+            /* Increase the size as needed */
+            height: 24px;
+            /* Ensure it's a square */
+        }
+
+        .btn-square {
+            width: 48px;
+            /* Adjust button size to match image size */
+            height: 48px;
+        }
+        pre {
+            background-color: transparent;
+            border: none;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .img-thumbnail {
+            max-width: 100%; /* Ensure the image fits within the column */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .vision-section {
+            background-color: #121D26;
+            padding: 20px;
+            color: #FFFFFF;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .vision-icon {
+            background-color: #76C043;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+        .vision-icon img {
+            width: 30px;
+        }
+        .section {
+            background-color: #121D26;
+            padding: 20px;
+            color: #FFFFFF;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* To create space between sections */
+        }
+        .icon {
+            background-color: #76C043;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+        .icon img {
+            width: 30px;
+            margin-top: 5px; /* Optional: Adjust as needed */
+        }
+
+        .section1 {
+    border: 1px solid #ddd; /* Optional: Add a border to define the box */
+    padding: 15px; /* Add padding for spacing inside the box */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+.text-center {
+    text-align: center; /* Center align text under the image */
+}
+
+.img-fluid {
+    max-width: 90%; /* Make sure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.page-header {
+    padding-top: 70px; /* Adjust this value based on the height of your fixed header */
+}
+s
+    </style>
+</head>
+
+<body class="hold-transition skin-green sidebar-mini">
+   
+        <header class="main-header fixed-top">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/Home/Index">
+                <img src="content/img/logohome.png" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-weight: 450">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item pe-4">
+                        <a class="nav-link active" aria-current="page" href="/Home/Index">Home</a>
+                    </li>
+
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="/Home/Aboutus">About Us</a>
+                    </li>
+
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="/Home/Traingcources">Training & courses</a>
+                    </li>
+
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="/Home/Peoples">People</a>
+                    </li>
+
+                    <li class="nav-item dropdown pe-4">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Open A Demat account/Start investing</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Invest in Mutual Fund</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="/Home/Review">Reviews/Testimonials</a>
+                    </li>
+
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="/Home/ContactUs">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- Login Button -->
+                <a href="/Home/Login" class="btn btn-outline-success"
+                    style="background-color: #358f39; color: white; font-size: 20px">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+</header>
+
+
+    <!-- center  --> 
+        <div class="page-header text-left ">
+            <div class="row align-items-center">
+                <div class="col-sm-12">
+                    <div aria-label="breadcrumb" class="text-center text-white">
+                        <h2 class="title">About Us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col-md-6 container-fluid">
+                <h2 class="section-heading text-center py-4" style="color: #175d65;">Believe. Achieve. <br> Succeed.</h2>
+               <p class="mx-3" style="padding: 10px; font-size: 18px; font-family: 'Poppins', sans-serif; margin-top: 20px;">
+                    Power of investment is a Financial advisory & educational academy. We provide an array of services starting from financial advisory, tax planning & imparting financial education etc. Time to time we organize Financial Literacy programs in the rural areas to help the unprivileged people to empower them with quality education so that they can make their financial lives better.
+                </p>
+           </div>
+            <div class="col-md-6">
+    <img class="rounded-circle img-fluid m-3" src="https://i.pinimg.com/564x/43/ce/02/43ce0205a329021f8ef0de545331bf68.jpg" alt="" />
+</div>
+
+        </div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6"> 
+                <div class="vision-icon mb-3">
+                    <img class="img-fluid" src="https://img.icons8.com/ios-filled/50/ffffff/visible.png" alt="Vision Icon"/>
+                </div>
+                <div>
+                    <h3>Our vision</h3>
+                    <p>To become one of the finest financial advisory & financial education platforms.</p>
+                </div>
+        </div>
+        <div class="col-md-6">
+            <div class="icon mb-3">
+                <img class="img-fluid" src="https://img.icons8.com/ios-filled/50/ffffff/goal.png" alt="Mission Icon"/>
+            </div>
+            <div>
+                <h3>Our mission</h3>
+                <p>Our mission is to empower our clients with the knowledge and tools they need to make informed investment decisions that align with their financial goals.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="page-header text-left ">
+            <div class="row align-items-center">
+                <div class="col-sm-12">
+                    <div aria-label="breadcrumb" class="text-center text-white">
+                        <h2 class="title">About Course & Trainer</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-6">
+            <div class="section1 text-center">
+                <h3 class="section-heading text-center" style="color: #175d65;">Course</h2>
+                <img src="https://i.pinimg.com/564x/43/ce/02/43ce0205a329021f8ef0de545331bf68.jpg" alt="Left Image" class="img-fluid">
+                <p class="mt-2">This is a 3 months mentorship program. We will start with the basics of investments & then dive deep into the fundamental and technical analysis of making investments. We will learn about developing your own psychology of Trading & learn wealth creation with help of long-term investment.</p>
+                <button type="button" class="btn btn-info">Explore more</button>
+            </div>
+        </div>
+        <!-- Right Column -->
+        <div class="col-md-6">
+            <div class="section1 text-center">
+                <h3 class="section-heading text-center" style="color: #175d65;">Trainer</h2>
+                <img src="https://i.pinimg.com/564x/43/ce/02/43ce0205a329021f8ef0de545331bf68.jpg" alt="Right Image" class="img-fluid">
+                <p class="mt-2">He is an alumnus of Austin university (USA) & IIM Bangalore. He has 12+ years of work experience across different industries in Finance domain. He exposed himself into the financial market at a very early age. He is a trader cum investor with 15+ years of experience in financial market.</p>
+                <p class="text-primary">Course Fees-: ₹24,999.00, (Register at the earliest to get early bird discount) New Batch starts from 17th october 2024.</p>
+                <button type="button" class="btn btn-info">Register online</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- center end -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light footer mt-2 py-5 wow fadeIn"
+        style="background-image: linear-gradient(to right top, #358f39, #2881c9)" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Our Office</h4>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <p class="mb-2">
+                        <i class="fa fa-map-marker-alt me-3"></i>C-180A, Second Floor,
+                        Defence Colony, New Delhi - 110024
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <p class="mb-2">
+                        <i class="fa fa-phone-alt me-3"></i>+91-8287700609 <br />
+                        <i class="fa fa-phone-alt me-3"></i>+91-6371126698
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <p class="mb-2">
+                        <i class="fa fa-envelope me-3"></i>info@powerofinvestment.co.in
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle d-flex align-items-center justify-content-center me-2"
+                            href="https://t.me/power_of_investment" target="_blank">
+                            <img src="content/img/icon/tele.png" class="social-icon" />
+                        </a>
+                        <a class="btn btn-square btn-outline-light rounded-circle d-flex align-items-center justify-content-center me-2"
+                            href="https://www.facebook.com/Power-Of-Investments-100214445387988/">
+                            <img src="content/img/icon/fb.png" class="social-icon" />
+                        </a>
+                        <a class="btn btn-square btn-outline-light rounded-circle d-flex align-items-center justify-content-center me-2"
+                            href="https://www.youtube.com/channel/UCu2yAW-QvE4C87WE8lDhhwg" target="_blank">
+                            <img src="content/img/icon/you.png" class="social-icon" />
+                        </a>
+                        <a class="btn btn-square btn-outline-light rounded-circle d-flex align-items-center justify-content-center me-2"
+                            href="https://www.instagram.com/invites/contact/?i=y7eb0xbkkw7m&utm_content=oiuzi48"
+                            target="_blank">
+                            <img src="content/img/icon/insta.png" class="social-icon" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy;
+                    <a class="border-bottom" href="https://powerofinvestment.co.in">Power of investment/</a>, All Right
+                    Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By Power of investment
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery (Non-Slim Version for full functionality) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- Popper.js for Bootstrap tooltips and popovers -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBogGzF2QNHPLg9FF4O8LqzA3V+pRynKylB4LP4I4vf6XTk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Additional Libraries -->
+    <script src="/Content/lib/wow/wow.min.js"></script>
+    <script src="/Content/lib/easing/easing.min.js"></script>
+    <script src="/Content/lib/waypoints/waypoints.min.js"></script>
+    <script src="/Content/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/Content/lib/counterup/counterup.min.js"></script>
+    <script src="/Content/lib/parallax/parallax.min.js"></script>
+    <script src="/Content/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="/Content/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="/routejs.axd/8290c657ae6f9a4a25741c6df82a18d30591f807/router.min.js"></script>
+    <script src="/WebHelpers.axd/1050757930eac1f68c57a43e55cf8721be2262f4/webhelpers.js"></script>
+    <script src="/Bundles/js?v=GCeGsjFsLMUur3EAzu0DAtBrbOeY9c25n_ZT-QSmJgU1"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="/Content/js/main.js"></script>
+    <!-- for table  -->
+ 
+    <!-- Ensure proper functioning of carousel -->
+    <script>
+        $("#carouselExampleIndicators").carousel({
+            interval: 20000,
+        });
+    </script>
+    <!-- POPUP -->
+ 
+
+    <!-- navbar fixed -->
+    <script>
+        window.addEventListener("scroll", function () {
+            var headerHeight = document.querySelector("header").offsetHeight;
+            var navbar = document.querySelector(".navbar");
+
+            if (window.scrollY >= headerHeight) {
+                navbar.classList.add("fixed-nav");
+            } else {
+                navbar.classList.remove("fixed-nav");
+            }
+        });
+    </script>
+</body>
+
+</html>
